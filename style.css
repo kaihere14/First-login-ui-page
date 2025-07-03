@@ -1,0 +1,141 @@
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+    @font-face {
+    font-family: steph;
+    src: url(/font/steph-font-bold.ttf);
+    }
+    .content {
+    height: 40rem;
+    width: 100%;
+    display: flex;
+    }
+    input {
+    outline: none;
+    }
+    .pic {
+    height: 100vh;
+    width: 50%;
+    background-image: url(/Images/d0f36b63a7a7e23e47e6c21bf96215eb.jpg);
+    background-size: cover;
+    }
+    .page {
+    height: 100vh;
+    background-color: #cdd5d1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .box {
+    height: 70vh;
+    width: 400px;
+    background-color: rgba(254, 254, 254, 0.2);
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(21, 4, 4, 0.3);
+    }
+    .login {
+    margin-bottom: 20px;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-size: 50px;
+    font-family: "steph";
+    }
+    .username input {
+    text-align: center;
+    background-color: rgba(254, 254, 254, 0.02);
+    font-family: 'steph',Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 3rem;
+    border: none;
+    width: 10rem;
+    }
+    .pass input {
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 0.01);
+    font-family: 'steph',Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 3rem;
+    border: none;
+    width: 10rem;
+    }
+    .click {
+    margin-top: 10px;
+    background-color: rgba(254, 254, 254, 0.01);
+    height: 30px;
+    width: 10rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(21, 4, 4, 0.3);
+    }
+    .click:hover {
+    background-color: rgba(126, 126, 126, 0.4);
+    color: #fff;
+    }   
+    .try {
+    font-family: "steph";
+    padding: 50px 0px 20px 0px;
+    font-size: 24px;
+    }
+    .social {
+    width: 40%;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .social i:hover {
+    color: grey;
+    transform: scale(1.1);
+    }
+    @media (max-width: 800px) {
+        .box{
+            backdrop-filter: blur(4px);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.357);
+        }
+    .content {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    .pic {
+        display: none;
+    }
+    .page {
+        background-image: url(/Images/d0f36b63a7a7e23e47e6c21bf96215eb.jpg);
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pass input {
+        border: 1px solid rgba(255, 255, 255, 0.279);
+        border-radius: 10px;
+    }
+    .pass input::placeholder {
+        letter-spacing: 0.25rem;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .username input {
+        border: 1px solid rgba(255, 255, 255, 0.279);
+        border-radius: 10px;
+    }
+    .username input::placeholder {
+        letter-spacing: 0.25rem;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .click {
+        background-color: rgba(254, 254, 254, 0.6);
+        align-self: center;
+        margin-left: 20px;
+    }
+    }
